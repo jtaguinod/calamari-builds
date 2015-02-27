@@ -6,13 +6,10 @@
  3) wget -q -O- "http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x4759FA960E27C0A6" | sudo apt-key add -
  4) apt-get update
  5) apt-get install salt-master salt-minion salt-syndic
- 6)echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+ 6) echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
  7)  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
  8)  apt-get update && sudo apt-get upgrade
- 9)  apt-get install -y curl build-essential openssl libssl-dev apache2 libapache2-mod-wsgi libcairo2 supervisor \
-    python-cairo libpq5 postgresql python-m2crypto python-virtualenv git python-dev swig libzmq-dev g++ postgresql-9.1 \
-    postgresql-server-dev-9.1 libcairo2-dev python-pip libpq-dev ruby debhelper python-mock python-configobj \
-    cdbs gem ruby1.9.1 ruby1.9.1-dev make devscripts software-properties-common python-support
+ 9)  apt-get install -y curl build-essential openssl libssl-dev apache2 libapache2-mod-wsgi libcairo2 supervisor python-cairo libpq5 postgresql python-m2crypto python-virtualenv git python-dev swig libzmq-dev g++ postgresql-9.1 postgresql-server-dev-9.1 libcairo2-dev python-pip libpq-dev ruby debhelper python-mock python-configobj cdbs gem ruby1.9.1 ruby1.9.1-dev make devscripts software-properties-common python-support
  10) dpkg -i calamari-server_1.0.0-1_amd64.deb
  11) calamari-ctl initialize
  12) cd calamari-clients
