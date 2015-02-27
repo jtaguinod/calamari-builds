@@ -1,7 +1,7 @@
 # calamari-builds
 * Gather dependencies for the calamari-server
 
- 1) Some ubuntu repositories is not updated. This repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
+ 1) Some ubuntu repository is not updated. This repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
  
  2) echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/saltstack.list
  
@@ -36,7 +36,7 @@
 
 * Gather dependencies for calamari-clients - Do this to all ceph nodes!
 
- 1)  Some ubuntu repositories is not updated. THis repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
+ 1)  Some ubuntu repository is not updated. THis repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
 
  2)  apt-get update
 
