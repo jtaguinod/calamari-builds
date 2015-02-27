@@ -1,11 +1,12 @@
 # calamari-builds
-Gather dependencies for the calamari-server
-1)  Some ubuntu repositories is not updated. THis repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
-2)  echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/saltstack.list
-3)  wget -q -O- "http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x4759FA960E27C0A6" | sudo apt-key add -
-4)  apt-get update
-5)  apt-get install salt-master salt-minion salt-syndic
-6)  echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+*Gather dependencies for the calamari-server
+
+Some ubuntu repositories is not updated. THis repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
+echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/saltstack.list
+wget -q -O- "http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x4759FA960E27C0A6" | sudo apt-key add -
+apt-get update
+apt-get install salt-master salt-minion salt-syndic
+echo "deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
 7)  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 8)  apt-get update && sudo apt-get upgrade
 9)  apt-get install -y curl build-essential openssl libssl-dev apache2 libapache2-mod-wsgi libcairo2 supervisor \
