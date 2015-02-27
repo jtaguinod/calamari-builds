@@ -1,7 +1,7 @@
 # calamari-builds
 * Gather dependencies for the calamari-server
 
- 1) Some ubuntu repositories is not updated. THis repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
+ 1) Some ubuntu repositories is not updated. This repo works for me (http://archive.ubuntu.com/ubuntu/ trusty main)
  2) echo "deb http://ppa.launchpad.net/saltstack/salt/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/saltstack.list
  3) wget -q -O- "http://keyserver.ubuntu.com:11371/pks/lookup?op=get&search=0x4759FA960E27C0A6" | sudo apt-key add -
  4) apt-get update
